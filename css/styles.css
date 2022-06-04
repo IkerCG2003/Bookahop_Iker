@@ -1,0 +1,325 @@
+/* NAVBAR */
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* FILTRO */
+
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+/* REGLAS INDEX.PHP */
+.cuerpoInicio {
+    background-image: url(../img/imagenFondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+/* IMAGEN INICIO SESIÓN */
+#contenedorImagen {
+    padding-top: 5%;
+}
+
+#imagen {
+    display:block;
+    margin:auto;
+    width: 150px;
+    height: 150px;
+}
+
+
+/* REGLAS FORMULARIO */
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#caja_busqueda {
+    height: 50px;
+    width: 300px;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+#boton {
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    width: 75%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: grey;
+    font-size: 2vw;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    padding-top: 35%;
+}
+
+#contContTitulo {
+    padding-top: 5%;
+}
+
+/* REGLAS TITULO */
+#contTitulo {
+    background-color: lightgray;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#titulo {
+    text-align: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+#tituloMenu {
+    color: white;
+}
+
+#contInformacion {
+    background-color: lightgray;
+    width: 55%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#informacion {
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 1.75vw;
+    height: 50vh;
+    padding-top: 5%;
+}
+
+#contenedorImagen {
+    padding-top: 5%;
+}
+
+/* ESTILOS TABLA */
+
+th, td{
+    text-align: left;
+}
+
+.h2g{
+    color: blue;
+    font-size: 26px;
+}
+
+.pg{
+    line-height: 2px;
+}
+
+/* TABLA */
+
+#titulo2 {
+    text-align: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 1.75vw;
+}
+
+#tabla {
+    width: 60%;
+}
+
+.id {
+    width: 2%;
+    font-size: 1.5vw;
+}
+
+.tit {
+    width: 15%;
+    font-size: 1.5vw;
+}
+
+.fech {
+    width: 6%;
+    font-size: 1.5vw;
+}
+
+.sec {
+    width: 5%;
+    font-size: 1.5vw;
+}
+
+#fondoTabla {
+    background-image: url(../img/fondoBBDD.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 88.5vh;
+}
+
+#btnbuscar {
+    width: 60px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 800px) 
+{
+    /* INDICE.PHP */
+    .cuerpoInicio {
+        height: 100vh;
+    }
+    #titulo {
+        font-size: 6vw;
+    }
+
+    #imagen {
+        width: 75px;
+        height: 75px;
+    }
+
+   #paginaPresentacion {
+       width: 100%;
+       padding-top: 20%;
+   }
+   
+   #menuNavegacion a {
+       font-size: 3.5vw;
+   }
+
+   .form  {
+        font-size: 5vw;
+   }
+
+    #contInformacion {
+        width: 85%;
+        height: 55vh;
+    }
+
+    .column-4 {
+        width: 10%;
+        font-size: 1vw;
+        padding-left: 4%;
+    }
+
+    #contContTitulo {
+        padding-top: 2%;
+    }
+
+    /* TABLA */
+    #btnbuscar {
+        width: 60px;
+        height: 30px;
+        border-radius: 15px;
+    }
+    #titulo2 {
+        text-align: center;
+        font-family: 'Ubuntu Condensed', sans-serif;
+        font-weight: bold;
+        font-size: 2vw;
+    }
+    #fondoTabla {
+        height: 90.5vh;
+    }
+    
+    #tabla {
+        width: 60%;
+    }
+    
+    .id {
+        width: 0.5%;
+        font-size: 1.25vw;
+    }
+    
+    .tit {
+        width: 3.5%;
+        font-size: 1.25vw;
+    }
+    
+    .fech {
+        width: 1.25%;
+        font-size: 1.25vw;
+    }
+    
+    .sec {
+        width: 2%;
+        font-size: 1.25vw;
+    }
+
+    /* NAVBAR */
+    #bienve {
+        font-size: 3vw;
+    }
+
+    #caja_busqueda {
+        height: 30px;
+    }
+
+    /* TITULO */
+    #titulo2 {
+        font-size: 3vw;
+    }
+
+    #contTitulo {
+        width: 50%;
+    }
+
+    #bienve {
+        font-size: 1.75vw;
+    }
+}
+
